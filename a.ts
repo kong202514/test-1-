@@ -66,10 +66,7 @@ function recursiveReverseString(text: string) {
     //     if ( ) 
     //         return ""
 
-    // recursiveReverseString()
-
-
-
+    recursiveReverseString()
 }
 console.log(recursiveReverseString('hello'))//olleh
 console.log(recursiveReverseString('prayuth'))//htuyarp
