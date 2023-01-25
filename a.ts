@@ -65,7 +65,9 @@ function recursiveReverseString(text: string) {
 
     //     if ( ) 
     //         return ""
-
+    if (count <= 0)
+        return
+    count--
     recursiveReverseString()
 }
 console.log(recursiveReverseString('hello'))//olleh
