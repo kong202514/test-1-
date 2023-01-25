@@ -1,5 +1,7 @@
 "use strict";
 const x = "hello";
+console.log(x.substring(1)); //ello
+console.log(x.charAt(0)); //h
 function reverseString(text) {
     let reverseText = "";
     for (let i = text.length - 1; i >= 0; i--) {
@@ -7,18 +9,14 @@ function reverseString(text) {
     }
     return reverseText;
 }
-console.log(reverseString("qwe")); //olleh
+console.log(reverseString(x)); //olleh
+// function recursiveReverseString(text: string) {
+//     return ""
+// }
 function recursiveReverseString(text) {
-    // return text[1]
-    let reverseText = "";
-    let text_length = text.length - 1;
-    // return text_length
-    if (text_length >= 0)
-        return;
-    reverseText += text[text_length];
-    return reverseText;
-    // recursiveReverseString(text_length - 1)
+    if (text.length <= 0)
+        return text;
+    return recursiveReverseString(text.substring(1)) + text.charAt(0);
 }
-console.log(recursiveReverseString("qwe"));
-// console.log(recursiveReverseString('hello'))//olleh
-// console.log(recursiveReverseString('prayuth'))//htuyarp
+console.log(recursiveReverseString('hello')); //olleh
+console.log(recursiveReverseString('prayuth')); //htuyarp
