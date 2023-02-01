@@ -1,5 +1,5 @@
-const numbers = [99, 44, 6, 2, 1, 5, 63, 87, 283, 4, 0];
-console.log(`original: ${numbers}`)
+const number_sq = [99, 44, 6, 2, 1, 5, 63, 87, 283, 4, 0];
+console.log(`original: ${number_sq}`)
 
 function bubleSort(arr: number[]) { // O(n^2)
     for (let i = 0; i < arr.length - 1; i++) {
@@ -13,5 +13,5 @@ function bubleSort(arr: number[]) { // O(n^2)
     }
 }
 
-bubleSort(numbers)
-console.log(`bubleSort: ${numbers}`)
+bubleSort(number_sq)
+console.log(`bubleSort: ${number_sq}`)
